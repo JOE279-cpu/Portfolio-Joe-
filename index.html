@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joe Praise Bondo — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=2">
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="logo" href="#">Joe Praise Bondo</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Hello, I’m <span class="accent">Joe Praise Bondo!</span></h1>
+          <p class="lead">
+            A 21-year-old IT student and front-end developer passionate about HTML, CSS, and learning new technologies.
+          </p>
+          <p>Click on my photo to learn more about me.</p>
+        </div>
+
+        <div class="hero-photo">
+          <img id="profile-photo" src="assets/joe.jpg" alt="Joe Praise Bondo">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section class="projects container">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <article class="card">
+          <h3>Portfolio Website</h3>
+          <p>A responsive personal website showing my HTML & CSS design skills.</p>
+        </article>
+        <article class="card">
+          <h3>HTML Table Layout</h3>
+          <p>A clean and organized table layout with embedded images.</p>
+        </article>
+        <article class="card">
+          <h3>Responsive CSS Design</h3>
+          <p>Using flexbox and grid to build adaptable, mobile-friendly pages.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact-page container">
+      <h2>Contact Me</h2>
+      <p>Fill in the form below and submit to reach out to me.</p>
+
+      <form id="contactForm" class="contact-form" action="#" method="post" onsubmit="return false;">
+        <label>Your Name
+          <input type="text" name="name" required>
+        </label>
+        <label>Your Email
+          <input type="email" name="email" required>
+        </label>
+        <label>Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" class="btn" id="submitBtn">Send Message</button>
+          <button type="reset" class="btn outline">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Joe Praise Bondo — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===== PHOTO MODAL ===== -->
+  <div id="photoModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" data-close>&times;</button>
+      <img src="assets/joe.jpg" alt="Joe Praise Bondo">
+      <h2>Joe Praise Bondo</h2>
+      <p>
+        I'm a 21-year-old IT student passionate about technology, design, and personal growth.  
+        I love learning, building websites, and finding creative solutions through code.
+      </p>
+      <button class="btn" data-close>Close</button>
+    </div>
+  </div>
+
+  <!-- ===== CONTACT CONFIRMATION MODAL ===== -->
+  <div id="confirmModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" data-close>&times;</button>
+      <p>Are you sure you want to send this message?</p>
+      <div class="modal-actions">
+        <button id="confirmSubmit" class="btn">Confirm</button>
+        <button class="btn outline" data-close>Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SCRIPT ===== -->
+  <script src="assets/script.js?v=2"></script>
+</body>
+</html>
